@@ -28,10 +28,10 @@ public class ArrayV2 {
 
         System.out.println(names2[2] + " " + names2[3] + " " + num2[2]);
 
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("What is your number? ");
-        num2[4] = scanner.nextInt(); // user input
-
+        try (Scanner scanner = new Scanner(System.in)) {
+            System.out.print("What is your number? ");
+            num2[4] = scanner.nextInt(); // user input
+        }
         System.out.println("Your number is " + num2[4]);
     }
 }

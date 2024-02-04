@@ -9,6 +9,7 @@ public class Comparison {
         // Age Comparison
         int meli = 19;
         int sara = 18;
+
         System.out.println(meli > sara);
         System.out.println(meli >= sara);
         System.out.println(meli < sara);

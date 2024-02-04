@@ -1,7 +1,7 @@
-package testing;
+package talana;
 // Teil 2 nicht als Lösung, da einfacher als dieser:
 
-public class Aufgabe19_T3 {
+public class Prozentsatz {
 
     public static void main(String[] args) {
 
@@ -28,7 +28,7 @@ public class Aufgabe19_T3 {
          */
 
         // Benutzereingabe verlangen/abfragen
-        System.out.print("Angangsbetrag > ");
+        System.out.print("Anfangsbetrag > ");
         betragAsString = System.console().readLine(); // betragAsString ist eine Variable
         betrag = Double.parseDouble(betragAsString);
 
@@ -36,7 +36,7 @@ public class Aufgabe19_T3 {
         zinsAsString = System.console().readLine();
         zins = Double.parseDouble(zinsAsString);
 
-        System.out.print("Laufzeit in J > ");
+        System.out.print("Laufzeit in Jahr > ");
         laufzeitAsString = System.console().readLine();
         laufzeit = Integer.parseInt(laufzeitAsString);
 

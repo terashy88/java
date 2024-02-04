@@ -6,7 +6,7 @@ public class Logical {
 
     public static void main(String[] args) {
 
-        boolean warm = true;
+        var warm = true;
         boolean cold = false;
 
         System.out.println("boolean warm = " + warm);

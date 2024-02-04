@@ -1,8 +1,8 @@
-package testing.zzArchiv;
+package talana;
 
 import javax.swing.JOptionPane;
 
-public class LL {
+public class GUIPanel {
     public static void main(String[] args) {
         var eingabe = JOptionPane.showInputDialog("Geben Sie Ihr Alter ein: ");
         var alter = Integer.parseInt(eingabe);

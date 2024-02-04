@@ -19,12 +19,12 @@ public class UserInput {
             // Alternativ String to Integer input
             System.out.println("Give me a readline input:..");
             System.out.println("only accept Int, and error output for String");
-            String A = System.console().readLine();
-            int newA = Integer.parseInt(A); // string to Integer
+            String a = System.console().readLine();
+            int newA = Integer.parseInt(a); // string to Integer
 
             System.out.println("This is your readLine Output in Int: " + newA);
             System.out.print("test g:  ");
-            String g = scanner.nextLine();
+            // String g = scanner.nextLine();
         } catch (NumberFormatException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();

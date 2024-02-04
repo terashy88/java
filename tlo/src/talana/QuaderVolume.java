@@ -17,15 +17,16 @@ public class QuaderVolume {
 		System.out.println("hi, We are getting the Volume of a Quader;..");
 		Thread.sleep(999);
 		System.out.println("Please give me the Length of this Quader in Meters:..");
-		Scanner scanner = new Scanner(System.in);
-		double l = scanner.nextDouble();
+		try (Scanner scanner = new Scanner(System.in)) {
+			double l = scanner.nextDouble();
 
-		System.out.println(" Bitte geben Sie die Breite an!\n");
-		double b = scanner.nextDouble();
+			System.out.println(" Bitte geben Sie die Breite an!\n");
+			double b = scanner.nextDouble();
 
-		System.out.println(" Bitte geben Sie die Höhe an!\n");
-		double h = scanner.nextDouble();
+			System.out.println(" Bitte geben Sie die Höhe an!\n");
+			double h = scanner.nextDouble();
 
-		System.out.println("The Volume of the Quader is: " + l * b * h);
+			System.out.println("The Volume of the Quader is: " + (l * b * h + " m\u00b3"));
+		}
 	}
 }

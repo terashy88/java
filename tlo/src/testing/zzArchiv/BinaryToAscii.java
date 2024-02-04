@@ -31,7 +31,7 @@ public class BinaryToAscii {
 				i++;
 			}
 			if (power == 1) {
-				System.out.print("Eingabe als Ascii Code: " + (int) count);
+				System.out.println("Eingabe als Ascii Code: " + (int) count);
 				break;
 			}
 			power = power / 2;

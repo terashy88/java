@@ -6,34 +6,34 @@ public class DiscountRabatt {
 
     public static void main(String[] args) {
 
-        int Discount = 0;
+        int discount = 0;
 
-        Scanner sc = new Scanner(System.in);
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.println("You can get discount,\nWhat group of Costumer are you?");
+            System.out.print("A, B, or C: ");
 
-        System.out.println("You can get Discount,\nWhat group of Costumer are you?");
-        System.out.print("A, B, or C: ");
+            String input = sc.next();
+            char n = input.charAt(0);
 
-        String input = sc.next();
-        char n = input.charAt(0);
+            switch (n) {
+                case 'A':
+                case 'a':
+                    discount = 5;
+                    break;
+                case 'B':
+                case 'b':
+                    discount = 3;
+                    break;
+                case 'C':
+                case 'c':
+                    discount = 2;
+                    break;
+                default:
+                    discount = 0;
+            }
 
-        switch (n) {
-            case 'A':
-            case 'a':
-                Discount = 5;
-                break;
-            case 'B':
-            case 'b':
-                Discount = 3;
-                break;
-            case 'C':
-            case 'c':
-                Discount = 2;
-                break;
-            default:
-                Discount = 0;
+            System.out.println("Costumer: " + n + " --> discount: " + discount);
         }
-
-        System.out.println("Costumer: " + n + " --> Discount: " + Discount);
     }
 
 }

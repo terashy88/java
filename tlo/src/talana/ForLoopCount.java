@@ -6,17 +6,34 @@ public class ForLoopCount {
 
     public static void main(String[] args) {
 
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("How much do you want me to count? ");
-        int a = scanner.nextInt();
+        try (Scanner scanner = new Scanner(System.in)) {
+            System.out.println("We are counting from one number to the other");
+            System.out.print("what is your first number? ");
+            int n = scanner.nextInt();
+            System.out.print("okay, what is your second number? ");
+            int n2 = scanner.nextInt();
 
-        for (int i = 0; i <= a; i++) {
-            System.out.println(i);
-            try {
-                Thread.sleep(66);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
+            if (n < n2) {
 
+                for (int i = n; i <= n2; i++) {
+                    System.out.println(i);
+                    try {
+                        Thread.sleep(66);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+
+                }
+            } else {
+                for (int i = n; i >= n2; i--) {
+
+                    System.out.println(i);
+                    try {
+                        Thread.sleep(66);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
             }
         }
     }

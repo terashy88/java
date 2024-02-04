@@ -1,20 +1,21 @@
-package testing;
+package talana;
 
-public class Countingg {
+public class Multiplication {
 
     public static void main(String[] args) {
 
-        int a = 2;
-        int b = 5;
+        int a;
+        int b;
         int sum = 0;
 
-        System.out.print("Welche Zahlenreihe moechten Sie haben? > ");
+        System.out.println("Multiplication Row");
+        System.out.print("Which row should we take? ");
         a = Integer.parseInt(System.console().readLine());
 
-        System.out.print("Wie viele Schritte sollen berechnet werden? > ");
+        System.out.print("And how much step should we count? ");
         b = Integer.parseInt(System.console().readLine());
 
-        System.out.print(a + "er-Reihe\n----------\n");
+        System.out.print(a + " multiplication\n----------\n");
 
         for (int i = 1; i <= b; i++) {
             sum = sum + a;

@@ -12,12 +12,13 @@ public class WhileLoopV2 {
         System.out.println("While The Number not being reach, we are counting!..");
         System.out.println("from where are we want to start?:.. \n");
 
-        Scanner scanner = new Scanner(System.in);
-        i = scanner.nextInt();
-
+        try (Scanner scanner = new Scanner(System.in)) {
+            i = scanner.nextInt();
+        }
         System.out.println("where should we stop?.. \n");
-        Scanner scanner2 = new Scanner(System.in);
-        a = scanner2.nextInt();
+        try (Scanner scanner2 = new Scanner(System.in)) {
+            a = scanner2.nextInt();
+        }
         System.out.println("counting");
 
         while (i <= a) {

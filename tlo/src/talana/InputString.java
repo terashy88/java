@@ -9,5 +9,6 @@ public class InputString {
 
 		System.out.println("hello " + i + " :c )");
 		System.out.println("I hope you doing well");
+
 	}
 }
