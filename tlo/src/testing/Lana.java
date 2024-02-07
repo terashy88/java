@@ -1,4 +1,3 @@
-package testing;
 
 /**
  * Lana
@@ -6,7 +5,7 @@ package testing;
 public class Lana {
 
     public static void main(String[] args) {
-        System.out.println(StrictMath.PI);
+        System.out.println("hi");
 
     }
 }

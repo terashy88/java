@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class ForLoopCount {
 
     public static void main(String[] args) {
-
+s
         try (Scanner scanner = new Scanner(System.in)) {
             System.out.println("We are counting from one number to the other");
             System.out.print("what is your first number? ");
